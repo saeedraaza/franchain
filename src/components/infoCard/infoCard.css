@@ -1,0 +1,33 @@
+.card {
+    display: flex;
+    align-items: center;
+    border: 1px solid #6671AE;
+    padding: 40px 50px;
+    border-radius: 20px;
+  }
+  
+  .card-image {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .card-text {
+    flex-grow: 1;
+    color: #6F6F89;
+  }
+  .card-text.break-line {
+    white-space: pre-line;
+  }
+  .card-checkbox {
+    margin-left: auto;
+    transform: scale(1.5);
+  }
+
+  @media (max-width: 868px) {
+    .card-checkbox {
+      margin-left: 5px;
+      transform: scale(1.1);
+    }
+  }
+  

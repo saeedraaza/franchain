@@ -1,0 +1,128 @@
+.verify-email {
+    .back-link {
+        color: #282828;
+        text-decoration: none;
+      display: flex;
+      justify-content: start;
+      margin-bottom: 20px;
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 28.64px;
+      text-align: right;
+      gap: 15px;
+      cursor: pointer;
+
+      img {
+        margin-top: -8px;
+      }
+    }
+    h2 {
+      color: #282828;
+      margin-bottom: 20px;
+      font-size: 26px;
+      font-weight: 500;
+      line-height: 39.06px;
+      text-align: left;
+    }
+    heading > p {
+      font-size: 20px;
+      font-weight: 400;
+      color: #282828;
+      margin: 0 0 10px;
+    }
+    
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    label {
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 5px;
+      color: #282828;
+    }
+    
+    input {
+      margin-bottom: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background: #fff;
+    }
+    
+    .password-hint {
+      margin-top: -8px;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 20.83px;
+      text-align: left;
+      color: #ff4e4e;
+    }
+    
+    button {
+      display: inline-block;
+      margin-top: 16px;
+    }
+    
+    
+    .terms {
+      font-size: 12px;
+      color: #282828;
+      margin-top: 20px;
+    }
+    
+    .terms a {
+      color: #282828;
+      /* text-decoration: none; */
+    }
+    
+    .terms a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 900px) {
+      .signup-page {
+        flex-direction: column;
+        /* height: 100vh; */
+      }
+      .right-section {
+        padding: 20px;
+      }
+    
+      .right-section {
+        order: 2;
+      }
+    
+      h1 {
+        font-size: 28px;
+        line-height: 38px;
+      }
+    
+      p {
+        font-size: 18px;
+        line-height: 28px;
+      }
+    
+      form {
+        margin-top: 20px;
+      }
+    
+      input {
+        padding: 12px;
+        margin-bottom: 12px;
+      }
+    
+      button {
+        padding: 12px;
+      }
+    
+      .password-hint {
+        margin-bottom: 12px;
+      }
+    
+      .terms {
+        margin-top: 12px;
+      }
+    }
+    
+}

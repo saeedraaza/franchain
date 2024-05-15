@@ -1,0 +1,55 @@
+/* src/components/PillButton.css */
+
+.pill-button {
+    font-family: 'DM Sans';
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 23.44px;
+  text-align: left;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pill-button.primary {
+  background: #7d97ff;
+  color: #fff;
+}
+
+.pill-button.primary:hover:not(:disabled) {
+  background-color: #728df8;
+}
+
+.pill-button.secondary {
+  border: 2px solid #7D97FF;
+  background-color: #fff;
+  color: #393948;
+  ;
+}
+
+.pill-button.secondary:hover:not(:disabled) {
+  opacity: .9;
+}
+
+.pill-button.danger {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.pill-button.danger:hover:not(:disabled) {
+  background-color: #c82333;
+}
+
+.pill-button:disabled {
+  background-color: #CED6F7;
+  color: #fff;
+  cursor: not-allowed;
+}
+@media (max-width: 700px) {
+  .pill-button{
+    margin-top: 0;
+
+  }
+}

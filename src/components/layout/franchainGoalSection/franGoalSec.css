@@ -1,0 +1,69 @@
+.fran-goal {
+  padding: 30px 40px;
+  margin-bottom: 200px;
+  .goal-header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    .heading-text {
+      h2 {
+        margin-top: 0;
+        /* margin-bottom: 10px; */
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 39.06px;
+        color: #393948;
+      }
+
+      p {
+        margin-bottom: 10px;
+        font-size: 18px;
+        font-weight: 400;
+        color: #6f6f89;
+      }
+    }
+    @media (max-width: 768px) {
+        flex-flow: column wrap;
+        .heading-text {
+            margin-top: 15px;
+        }
+      }
+  }
+
+  .goal-container {
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(350px, 1fr)
+    ); /* Responsive grid with minimum width of 300px */
+    gap: 40px; /* Gap between grid items */
+  }
+
+  .next-btn{
+    margin-top: 10px;
+    display: flex;
+    justify-content: end;
+  }
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    margin-bottom: 300px;
+    .goal-container {
+      grid-template-columns: repeat(
+        auto-fit,
+        minmax(250px, 1fr)
+      ); /* Adjust column width for smaller screens */
+    }
+  }
+}
+@media (max-width: 768px) {
+  .fran-goal .goal-header .heading-text h2 {
+    margin-top: 10px;
+    font-size: 28px;
+    text-align: center;
+  }
+  .fran-goal .goal-header .heading-text p {
+    font-size: 16px;
+    text-align: center;
+  }
+}
